@@ -7,7 +7,17 @@
 </head>
 <body>
 
-<%= yield %>
+  <div class="container">
+      <nav class="nav navbar-default">
+        <ul class="nav navbar-nav">
+          <li><a href="#">Home</li></a>
+          <li><a href="#">About</li></a>
+          <li><a href="#">Contact</li></a>
+        </ul>
+      </nav>
+    <%= yield %>
+  </div>
+
 <%= javascript_include_tag "application" %>
 </body>
 </html>
